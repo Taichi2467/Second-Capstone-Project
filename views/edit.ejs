@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <p class="display-5 fw-bold lh-1 text-body-emphasi py-3 mb-3">Edit Post</p>
+    <hr>
+    <div class="d-flex justify-content-center">
+        <form action="/editpost" method="POST">
+            <input type="hidden" name="fileName" value="<%= fileName %>">
+            <input class="w-100 mb-2 fs-5" type="text" placeholder="Title" name="Title" value="<%= Title %>">
+            <textarea class="w-100 mb-2 fs-5" rows="10" cols="30" placeholder="Write your post here" name="Content"><%= Content %></textarea>
+            <input class="w-100 mb-2 fs-5" type="text" placeholder="Author" name="Author" value="<%= Author %>">
+            <div class="d-flex justify-content-center w-100">
+                <input class="col-6 m-1 fs-5 btn btn-dark btn-lg" type="submit" value="Post">
+                <button class="col-6 m-1 fs-5 btn btn-dark btn-lg" name="button" value="Cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

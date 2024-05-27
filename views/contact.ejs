@@ -1,0 +1,68 @@
+<%- include("partials/header.ejs") %>
+
+<section id="section-footer" class="gradient-background mt-5">
+    <div class="container">
+        
+        <footer class="py-3 mt-4">
+
+            <div class="container col-xl-12 col-xxl-10 px-4 py-5">
+                <div class="row align-items-center g-lg-5 py-5">
+                    <div class="col-lg-5 text-center text-lg-start">
+                        <h1 class="display-5 fw-bold lh-1 text-body-emphasis mb-3">Contact Me!</h1>
+                        <p class="col-lg-10 fs-5">Sign in the form so we can get in touch.<br>You can also check out my GitHub profile.</p>
+                    </div>
+
+                    <div id="myCarousel" class="carousel carousel-dark slide col-lg-7 col-md-10 mx-auto" data-bs-interval="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                        </div>
+                      
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" width="50%">
+                                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput">
+                                        <label for="floatingInput">Your Name</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingText">
+                                        <label for="floatingText">Your Email</label>
+                                    </div>
+
+                                    <button class="w-100 btn btn-lg btn-dark" type="submit">Send</button>
+                                </form>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <svg class="bd-placeholder-img" width="50vw" height="50vh" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                                    <div class="carousel-caption">
+                                        <h1>GitHub</h1>
+                                        <p>Come take a look on my GitHub profile. You might like it 😄</p>
+                                        <img class="img-responsive mb-4" src="images/github.png">
+                                        <p><a class="btn btn-lg btn-dark" href="#">Check out</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> 
+                        </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+</section>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+
+    <p class="display-5 fw-bold lh-1 text-body-emphasi py-3 mb-3">Posts</p>
+    <hr>
+    
+    <% for (let i = 0; i < postLength; i++) { %>
+        
+        <div class="container col-10 py-3">
+            <% var arquivo = posts[i] %>
+            <%- include(`posts/${arquivo}`) %>
+            <div class="d-flex">
+                <form action="/edit" method="POST">
+                    <input class="m-1 fs-5 btn btn-dark" type="submit" name="<%= arquivo %>" value="Edit">
+                </form>
+                
+                <form action="/delete" method="POST">
+                    <input class="m-1 fs-5 btn btn-dark" type="submit" name="<%= arquivo %>" value="Delete">
+                </form>
+            </div>
+            <hr>
+        </div>
+    <% } %>
+    
+    
+
+</div>
+
+<%- include("partials/footer.ejs") %>
